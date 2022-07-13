@@ -50,8 +50,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("اެݪمِطَۅࢪ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("اެݪمِطَۅࢪ", url=f"https://t.me/{OWNER_USERNAME}"),
                 InlineKeyboardButton("اެݪاۅاެمࢪ", callback_data="users"),
+                InlineKeyboardButton("قِـنِـآة آݪِـمِـطِـۆږﮧ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [
                 InlineKeyboardButton("طࢪيقة اެݪتشغيݪ", callback_data="spam"),
@@ -84,7 +85,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
             [
                 InlineKeyboardButton("اެݪاۅاެمࢪ", callback_data="help"),
-                InlineKeyboardButton("🦎 اެݪمطَۅࢪ", url=f"https://t.me/{UPDATES_CHANNEL}")
+                InlineKeyboardButton("🦎 اެݪمطَۅࢪ", url=f"https://t.me/{OWNER_USERNAME}")
+                InlineKeyboardButton("قِـنِـآة آݪِـمِـطِـۆږﮧ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -179,7 +181,8 @@ async def start(client: Client, message: Message):
             
             [
                 InlineKeyboardButton("اެݪاۅاެمࢪ", callback_data="help"),
-                InlineKeyboardButton("🦎 اެݪمطَۅࢪ", url=f"https://t.me/{UPDATES_CHANNEL}")
+                InlineKeyboardButton("🦎 اެݪمطَۅࢪ", url=f"https://t.me/{OWNER_USERNAME}")
+                InlineKeyboardButton("قِـنِـآة آݪِـمِـطِـۆږﮧ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
